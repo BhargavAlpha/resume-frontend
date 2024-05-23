@@ -4,8 +4,8 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { format, parse } from 'date-fns'; // Importing format and parse functions from date-fns
 
-const ExperienceModal = ({ experience, add, resumeId, onClose }) => {
-  const url=import.meta.VITE_URL;
+const ExperienceModal = ({ experience, add, resumeId, onClose,onUpdate }) => {
+  const url=import.meta.env.VITE_URL;
   const [currentExperience, setCurrentExperience] = useState(experience || {
     company: '',
     role: '',
@@ -65,6 +65,7 @@ const ExperienceModal = ({ experience, add, resumeId, onClose }) => {
         alert("Experience updated successfully");
       }
       onClose();
+      onUpdate();
     } catch (error) {
       console.error("There was an error updating the experience!", error);
       alert("Failed to update experience. Please try again.");

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Edu.css";
 import EducationModal from "./EducationModal";
 
-const Education1 = ({ education, resumeId }) => {
+const Education1 = ({ education, resumeId , onUpdate}) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedEducation, setSelectedEducation] = useState(null);
 
@@ -89,8 +89,9 @@ const Education1 = ({ education, resumeId }) => {
             <EducationModal
               resumeId={resumeId}
               education={selectedEducation}
-              add={!selectedEducation} // If no selectedEducation, it's an addition
-              onClose={handleModalSubmit} // Close modal on submit
+              add={!selectedEducation} 
+              onClose={handleModalSubmit} 
+              onUpdate={onUpdate}
             />
           </div>
         </div>

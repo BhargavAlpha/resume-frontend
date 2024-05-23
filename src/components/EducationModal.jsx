@@ -5,7 +5,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { format, parse } from "date-fns";
 
-function EducationModal({ education, add, resumeId, onClose }) {
+function EducationModal({ education, add, resumeId, onClose ,onUpdate}) {
   const url=import.meta.env.VITE_URL;
   
   const [edu, setEdu] = useState({
@@ -56,6 +56,7 @@ function EducationModal({ education, add, resumeId, onClose }) {
         alert("Education updated successfully");
       }
       onClose();
+      onUpdate();
     } catch (error) {
       console.error("There was an error updating the education!", error);
       alert("Failed to update education. Please try again.");

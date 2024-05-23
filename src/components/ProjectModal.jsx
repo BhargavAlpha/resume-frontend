@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { format, parse } from 'date-fns'; // Importing format and parse functions from date-fns
+import { format, parse } from 'date-fns'; 
 
-function ProjectModal({ project, add, resumeId, onClose }) {
+function ProjectModal({ project, add, resumeId, onClose,onUpdate }) {
   const url=import.meta.env.VITE_URL;
   const [formData, setFormData] = useState({
     name: project?.name || '',
@@ -55,10 +55,11 @@ function ProjectModal({ project, add, resumeId, onClose }) {
         await axios.post(`${url}/resume/project/add-project/${resumeId}`, formattedData);
         alert("Project added successfully");
       } else {
-        await axios.put(`${url}resume/project/edit-project/${resumeId}/${project._id}`, formattedData);
+        await axios.put(`${url}/resume/project/edit-project/${resumeId}/${project._id}`, formattedData);
         alert("Project updated successfully");
       }
       onClose();
+      onUpdate();
     } catch (error) {
       console.error("There was an error updating the project!", error);
       alert("Failed to update project. Please try again.");

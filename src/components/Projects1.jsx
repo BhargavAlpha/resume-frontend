@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Proj.css";
 import ProjectModal from "./ProjectModal"; 
 
-const Projects1 = ({ projects, resumeId }) => {
+const Projects1 = ({ projects, resumeId ,onUpdate}) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -88,8 +88,9 @@ const Projects1 = ({ projects, resumeId }) => {
             <ProjectModal
               resumeId={resumeId}
               project={selectedProject}
-              add={!selectedProject} // If no selectedProject, it's an addition
-              onClose={handleModalSubmit} // Close modal on submit
+              add={!selectedProject}
+              onClose={handleModalSubmit} 
+              onUpdate={onUpdate}
             />
           </div>
         </div>

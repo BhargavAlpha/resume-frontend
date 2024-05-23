@@ -91,7 +91,10 @@ export default function Resume() {
   };
 
   const handleDownloadSampleResume = () => {
-    console.log("Download Sample Resume clicked");
+    const link = document.createElement('a');
+    link.href = '../sample-resume.pdf';
+    link.download = 'sample-resume.pdf';
+    link.click();
   };
 
   return (

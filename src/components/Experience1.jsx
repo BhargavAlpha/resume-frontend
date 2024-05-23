@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Exp.css";
 import ExperienceModal from "./ExperienceModal";
 
-const Experience1 = ({ experiences, resumeId }) => {
+const Experience1 = ({ experiences, resumeId , onUpdate}) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedExperience, setSelectedExperience] = useState(null);
 
@@ -94,6 +94,7 @@ const Experience1 = ({ experiences, resumeId }) => {
               experience={selectedExperience}
               add={!selectedExperience}
               onClose={handleModalSubmit}
+              onUpdate={onUpdate}
             />
           </div>
         </div>
