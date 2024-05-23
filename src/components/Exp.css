@@ -1,0 +1,282 @@
+.work-experience1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  white-space: pre-wrap;
+}
+.work-experience-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7.5px 0 0;
+}
+.add-new2 {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #992e9d;
+  text-align: left;
+  display: inline-block;
+  min-width: 71px;
+}
+.fi-br-add-icon2 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.fibradd-instance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4px 0 0;
+}
+.add-new-work,
+.hero-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.add-new-work {
+  cursor: pointer;
+  border: 1px solid #b73bbe;
+  padding: 10px 23px;
+  background-color: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.hero-gallery {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: 20px;
+}
+.landingcontainer-child {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: #f5f5f6;
+}
+.ux-designer-google-chennai {
+  position: relative;
+  font-weight: 600;
+  text-indent: 6px;
+}
+.apr-2022- {
+  position: relative;
+  font-size: 16px;
+  color: #686972;
+  text-indent: 6px;
+}
+.ux-designer-google-chennai-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.edit2 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 30px;
+}
+.fi-br-pencil-icon2 {
+  height: 14px;
+  width: 14px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.edit-experience {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  gap: 6px;
+  font-size: 16px;
+  color: #992e9d;
+}
+.a-new-alternative-for-your-pat {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+  font-size: 18px;
+}
+.lorem-ipsum-dolor1,
+.scelerisque-tincidunt-iaculis1,
+.senectus-vel-pellentesque1 {
+  margin-bottom: 0;
+}
+.lorem-ipsum-dolor-sit-amet-con1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: 19px;
+}
+.lorem-ipsum-dolor-container1 {
+  align-self: stretch;
+  position: relative;
+  color: #686972;
+}
+.html1 {
+  position: relative;
+  font-size: 14px;
+  font-family: Poppins;
+  color: #4c4d52;
+  text-align: left;
+  display: inline-block;
+  min-width: 36px;
+}
+.html-container {
+  cursor: pointer;
+  border: 0;
+  padding: 6px 20px;
+  background-color: #f5f5f6;
+  flex: 1;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 49px;
+}
+.html-container:hover,
+.js-wrapper:hover,
+.react-wrapper:hover {
+  background-color: #dbdbde;
+}
+.css1 {
+  position: relative;
+  display: inline-block;
+  min-width: 28px;
+}
+.css-wrapper {
+  border-radius: 100px;
+  background-color: #f5f5f6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+}
+.js1 {
+  position: relative;
+  font-size: 14px;
+  font-family: Poppins;
+  color: #4c4d52;
+  text-align: left;
+  display: inline-block;
+  min-width: 16px;
+}
+.js-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 6px 20px;
+  background-color: #f5f5f6;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.react1 {
+  position: relative;
+  font-size: 14px;
+  font-family: Poppins;
+  color: #4c4d52;
+  text-align: left;
+  display: inline-block;
+  min-width: 41px;
+}
+.react-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 6px 20px;
+  background-color: #f5f5f6;
+  flex: 1;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 53px;
+}
+.backed-by-decades-of-research,
+.experience-description,
+.landingcontainer {
+  box-sizing: border-box;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.experience-description {
+  width: 329px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 6px;
+  gap: 12px;
+  color: #4c4d52;
+}
+.backed-by-decades-of-research,
+.landingcontainer {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  color: #3b3b3e;
+  font-family: Poppins;
+}
+.backed-by-decades-of-research {
+  align-self: stretch;
+  border-radius: 16px;
+  border: 1px solid #e5e5e8;
+  padding: 18px 19px;
+  gap: 10px;
+  font-size: 14px;
+}
+.landingcontainer {
+  width: 1152px;
+  border-radius: 24px;
+  background-color: #fff;
+  border: 1px solid #f5f5f6;
+  padding: 30px 31px 186px;
+  gap: 24px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 22px;
+}
+@media screen and (max-width: 550px) {
+  .a-new-alternative-for-your-pat {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .work-experience1 {
+    font-size: 18px;
+  }
+  .hero-gallery {
+    flex-wrap: wrap;
+  }
+}

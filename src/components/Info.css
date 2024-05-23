@@ -1,0 +1,199 @@
+.div1 {
+  height: 77px;
+  width: 77px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #f5f5f6;
+  border: 0 solid #fff;
+  box-sizing: border-box;
+}
+.salmaan-ahmed {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1b1b1d;
+}
+.uiux-designer {
+  display: inline-block;
+  min-width: 118px;
+}
+.meenakshi-college-of1,
+.uiux-designer {
+  position: relative;
+}
+.designer-info,
+.experience {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.designer-info {
+  flex: 1;
+  flex-direction: column;
+  min-width: 175px;
+}
+.experience {
+  width: 356px;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 100%;
+}
+.download-resume {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fcf5fe;
+  text-align: left;
+}
+.fi-br-download-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button,
+.icon {
+  justify-content: flex-start;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 0 0;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 16px 24px;
+  background-color: #992e9d;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-direction: row;
+  gap: 8px;
+}
+.button,
+.download,
+.menu,
+.menu-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.download {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 11px 0 0;
+}
+.menu,
+.menu-wrapper {
+  flex-direction: row;
+  max-width: 100%;
+}
+.menu {
+  flex: 1;
+  justify-content: space-between;
+  gap: 20px;
+}
+.menu-wrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 9px;
+  box-sizing: border-box;
+}
+
+
+.main-page {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.main-page {
+  justify-content: flex-start;
+  /* border: 2px solid black; */
+}
+
+.main-page {
+  width: 1152px;
+  border-radius: 24px;
+  background-color: #f5f5f6;
+  border: 1px solid #e5e5e8;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 30px 22px 0;
+  gap: 32px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 16px;
+  color: #595961;
+  font-family: Poppins;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  cursor: pointer;
+}
+
+.footer-text {
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  background: var(--Eminence-700, #992E9D); /* Selected underline color */
+  transition: background 0.3s;
+}
+
+.footer-item.selected .footer-text {
+  color: var(--Eminence-700, #992E9D); /* Selected text color */
+}
+
+
+@media screen and (max-width: 675px) {
+  .menu {
+    flex-wrap: wrap;
+  }
+  .footer-text{
+    font-size: 14px;
+  
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .main-page {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .salmaan-ahmed {
+    font-size: 16px;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-text{
+    font-size: 12px;
+    padding: 0;
+  }
+  .certificates,
+  .experience {
+    flex-wrap: wrap;
+  }
+}

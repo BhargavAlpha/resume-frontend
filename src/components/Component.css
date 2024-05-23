@@ -1,0 +1,279 @@
+.component {
+  display: flex;
+  padding: 0px 15%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  /* border: 2px solid black; */
+}
+ h2 {
+  color: var(--Woodsmoke-950, #1B1B1D);
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.resumebtn-div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.sampleresume-btn{
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: var(--Eminence-50, #fcf5fe);
+  border-radius: 8px;
+  background: var(
+    --Linear-Eminence,
+    linear-gradient(180deg, #b73bbe 0%, #992e9d 93.51%)
+  );
+  border: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+
+}
+
+label {
+  color: var(--Woodsmoke-700, #4c4d52);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--Woodsmoke-500, #8f919d);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.row1 {
+  display: flex;
+  gap: 1%;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width:100%;
+  
+}
+.input-box {
+  border-radius: 12px;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  /* width:100%; */
+  overflow-y: hidden; 
+  border: 1px solid var(--Woodsmoke-300, #ADAFB3);
+}
+.itr{
+  width: 100%;
+  gap:15px;
+  display: flex;
+  flex-direction: column;
+}
+.points-container{
+  width:100%;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#point-input{
+  width: 100%;
+}
+.remove-point-icon{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.mmyyyy {
+  position: relative;
+  display: inline-block;
+  min-width: 64px;
+}
+.fi-br-calendar-icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.fi-br-calendar-wrapper,
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5px 0 0;
+}
+.home-page {
+  width: 100%;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #adafb3;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14px 17px 14px 15px;
+  line-height: normal;
+  letter-spacing: normal;
+  gap: 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #4c4d52;
+  font-family: Poppins;
+}
+
+#institution {
+  width: 70%;
+}
+#city {
+  width: 30%;
+}
+#course,#grade,#from,#to{
+    width:50%;
+}
+#exp-from,#exp-to{
+  width: 44.5%;
+}
+
+#proj-title,#exp-company{
+    width: 60%;
+}
+#proj-techstack,#exp-role{
+  width: 40%;
+}
+#proj-links,#proj-desc,#date,#exp-desc{
+  width: 100%;
+}
+
+#date-picker{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textarea-box{
+  border-radius: 12px;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  overflow-y: hidden; 
+  height: 80px;
+  color: var(--Woodsmoke-500, #686972);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.continue-btn:disabled , .add-project-btn:disabled{
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.continue-btn,.add-project-btn,.remove-project-btn {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: var(--Eminence-50, #fcf5fe);
+  border-radius: 8px;
+  background: var(
+    --Linear-Eminence,
+    linear-gradient(180deg, #b73bbe 0%, #992e9d 93.51%)
+  );
+  border: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.add-desc-btn,.remove-proj-btn,.remove-exp-btn,.remove-edu-btn{
+  display: flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--Eminence-50, #fcf5fe);
+  border-radius: 8px;
+  background: var(
+    --Linear-Eminence,
+    linear-gradient(180deg, #b73bbe 0%, #992e9d 93.51%)
+  );
+  border: none;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  width:200px;
+
+}
+@media screen and (max-width: 768px) {
+    label{
+        font-size: 12px;
+    }
+  .component {
+    padding: 0px 5%;
+  }
+  .component h2 {
+    font-size: 24px;
+  }
+  .input-box {
+    padding: 12px;
+    gap: 8px;
+  }
+  .input-div {
+    gap: 8px;
+  }
+  .continue-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .textarea-box{
+    padding: 12px;
+    gap: 8px;
+  }
+  .continue-btn,.add-project-btn{
+    padding:8px 12px;
+    font-size:12px;
+  }
+}
+
+@media screen and (max-width:480px){
+  label{
+    font-size:10px;
+  }
+  .sampleresume-btn{
+   padding: 8px 16px;
+    font-size: 14px;
+  }
+}
