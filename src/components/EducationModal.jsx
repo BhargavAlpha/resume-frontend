@@ -6,6 +6,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import { format, parse } from "date-fns";
 
 function EducationModal({ education, add, resumeId, onClose }) {
+  const url=import.meta.env.VITE_URL;
+  
   const [edu, setEdu] = useState({
     college: "",
     city: "",
@@ -45,12 +47,12 @@ function EducationModal({ education, add, resumeId, onClose }) {
         startDate: edu.startDate ? format(edu.startDate, 'MM/yyyy') : "",
         endDate: edu.endDate ? format(edu.endDate, 'MM/yyyy') : "",
       };
-
+      console.log(url);
       if (add) {
-        await axios.post(`http://localhost:3000/education/add-education/${resumeId}`, formattedEdu);
+        await axios.post(`${url}/resume/education/add-education/${resumeId}`, formattedEdu);
         alert("Education added successfully");
       } else {
-        await axios.put(`http://localhost:3000/education/edit-education/${resumeId}/${education._id}`, formattedEdu);
+        await axios.put(`${url}/resume/education/edit-education/${resumeId}/${education._id}`, formattedEdu);
         alert("Education updated successfully");
       }
       onClose();

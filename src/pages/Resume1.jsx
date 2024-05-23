@@ -7,16 +7,18 @@ import Experience1 from "../components/Experience1";
 import Education1 from "../components/Education1";
 
 function Resume1() {
+  const url=import.meta.env.VITE_URL;
   const [activeComponent, setActiveComponent] = useState("Education");
   
   const [userData, setUserData] = useState({});
   useEffect(() => {
+    console.log(import.meta.env.VITE_URL);
     getUserData();
   }, []);
 
   async function getUserData() {
     try {
-      const res = await axios.post("http://localhost:3000/resume/get-data", {
+      const res = await axios.post(`${url}/resume/get-data`, {
         'email':localStorage.getItem('email')
       });
       console.log(localStorage.getItem('email'));

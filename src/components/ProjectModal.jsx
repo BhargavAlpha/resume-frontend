@@ -5,6 +5,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { format, parse } from 'date-fns'; // Importing format and parse functions from date-fns
 
 function ProjectModal({ project, add, resumeId, onClose }) {
+  const url=import.meta.env.VITE_URL;
   const [formData, setFormData] = useState({
     name: project?.name || '',
     techStack: project?.techStack || '',
@@ -51,10 +52,10 @@ function ProjectModal({ project, add, resumeId, onClose }) {
       };
 
       if (add) {
-        await axios.post(`http://localhost:3000/project/add-project/${resumeId}`, formattedData);
+        await axios.post(`${url}/resume/project/add-project/${resumeId}`, formattedData);
         alert("Project added successfully");
       } else {
-        await axios.put(`http://localhost:3000/project/edit-project/${resumeId}/${project._id}`, formattedData);
+        await axios.put(`${url}resume/project/edit-project/${resumeId}/${project._id}`, formattedData);
         alert("Project updated successfully");
       }
       onClose();

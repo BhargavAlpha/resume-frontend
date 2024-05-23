@@ -5,6 +5,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { format, parse } from 'date-fns'; // Importing format and parse functions from date-fns
 
 const ExperienceModal = ({ experience, add, resumeId, onClose }) => {
+  const url=import.meta.VITE_URL;
   const [currentExperience, setCurrentExperience] = useState(experience || {
     company: '',
     role: '',
@@ -57,10 +58,10 @@ const ExperienceModal = ({ experience, add, resumeId, onClose }) => {
   const handleSubmit = async () => {
     try {
       if (add) {
-        await axios.post(`http://localhost:3000/experience/add-experience/${resumeId}`, currentExperience);
+        await axios.post(`${url}/resume/experience/add-experience/${resumeId}`, currentExperience);
         alert("Experience added successfully");
       } else {
-        await axios.put(`http://localhost:3000/experience/edit-experience/${resumeId}/${experience._id}`, currentExperience);
+        await axios.put(`${url}/resume/experience/edit-experience/${resumeId}/${experience._id}`, currentExperience);
         alert("Experience updated successfully");
       }
       onClose();

@@ -8,6 +8,7 @@ import Experience from "../components/Experience";
 import axios from 'axios';
 
 export default function Resume() {
+  const url=import.meta.env.VITE_URL;
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1); 
   const [personal, setPersonal] = useState({ fullName: '', lastName: '', email: '', phone: '', city: '', state: '' });
@@ -54,7 +55,7 @@ export default function Resume() {
     };
 
     try {
-      axios.post('http://localhost:3000/resume/store-data', userData)
+      axios.post(`${url}/resume/store-data`, userData)
         .then(res => {
           console.log(res);
         })
@@ -90,8 +91,6 @@ export default function Resume() {
   };
 
   const handleDownloadSampleResume = () => {
-    // Implement download functionality here if needed
-    // For now, we just log a message
     console.log("Download Sample Resume clicked");
   };
 

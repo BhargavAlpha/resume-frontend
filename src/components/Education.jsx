@@ -1,13 +1,13 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { format, parse } from 'date-fns'; // Importing format and parse functions from date-fns
+import { format, parse } from 'date-fns'; 
 
 function Education({ handleContinue, education, setEducation }) {
   const handleAddEducation = () => {
     setEducation([
       ...education,
-      { college: '', city: '', degree: '', cgpa: '', startDate: '', endDate: '' } // Initialize dates as empty strings
+      { college: '', city: '', degree: '', cgpa: '', startDate: '', endDate: '' } 
     ]);
   };
 
@@ -26,13 +26,13 @@ function Education({ handleContinue, education, setEducation }) {
 
   const handleStartDateChange = (index, date) => {
     const updatedEducations = [...education];
-    updatedEducations[index].startDate = date ? format(date, 'MM/yyyy') : ''; // Formatting date to MM/yyyy
+    updatedEducations[index].startDate = date ? format(date, 'MM/yyyy') : ''; 
     setEducation(updatedEducations);
   };
 
   const handleEndDateChange = (index, date) => {
     const updatedEducations = [...education];
-    updatedEducations[index].endDate = date ? format(date, 'MM/yyyy') : ''; // Formatting date to MM/yyyy
+    updatedEducations[index].endDate = date ? format(date, 'MM/yyyy') : ''; 
     setEducation(updatedEducations);
   };
 
